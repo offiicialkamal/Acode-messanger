@@ -1,3 +1,6 @@
+## Version 1.0.4
+- removed the render html functionality
+
 ## Version 1.0.1
 - Resolved `File not Found error`
 

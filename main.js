@@ -910,11 +910,12 @@
             const messageContent = document.createElement('p');
             messageContent.style.cssText = 'font-weight:500; overflow-x:auto; ' + (isOwnMessage ? 'margin-left:auto;' : 'margin-right:auto;');
 
-            if (messageText.startsWith("render'''")) {
-                messageContent.innerHTML = messageText.replace("render'''", " ");
-            } else {
-                messageContent.textContent = messageText;
-            }
+            // if (messageText.startsWith("render'''")) {
+            //     messageContent.innerHTML = messageText.replace("render'''", " ");
+            // } else {
+            //     messageContent.textContent = messageText;
+            // }
+            messageContent.textContent = messageText; // use the safe option to reduce the risqs
 
             messageElement.appendChild(messageContent);
             container.appendChild(messageElement);
